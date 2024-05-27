@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EC6593"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="705dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#EC6593"
+            android:text="Расчет отпускных"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorLink="#E91E63"
+            android:textDirection="firstStrong"
+            android:textIsSelectable="false"
+            android:textSize="23sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/editTextText1"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginRight="16sp"
+            android:drawableTint="#00BCD4"
+            android:ems="10"
+            android:hint="Введите среднюю зп за 12 месяцев"
+            android:inputType="number"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginRight="16sp"
+            android:drawableTint="#00BCD4"
+            android:ems="10"
+            android:hint="количество дней отпуска"
+            android:inputType="number"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_marginLeft="120sp"
+            android:layout_marginRight="120sp"
+            android:text="Расчитать"
+            android:textColor="@color/white"
+            app:rippleColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="32sp"
+            android:background="#EC6593"
+            android:text="Результат"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorLink="#E91E63"
+            android:textDirection="firstStrong"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="221dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="90sp"
+            android:background="@color/pink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/raduga" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
